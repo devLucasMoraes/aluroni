@@ -9,7 +9,7 @@ interface BuscadorProps {
 export default function Buscador({busca, setBusca} :BuscadorProps) {
     return (
         <div className={styles.buscador}>
-            <input type="text" value={busca} onChange={evento => setBusca(evento.target.value)}/>
+            <input placeholder='Buscar' type="text" value={busca} onChange={evento => setBusca(evento.target.value)}/>
             <CgSearch size={20} color="#4c4d5e" />
         </div>
     )
