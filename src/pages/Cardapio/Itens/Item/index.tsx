@@ -1,5 +1,4 @@
 import styles from './Item.module.scss'
-import logo from 'assets/logo.svg'
 import cardapio from '../itens.json'
 import classNames from 'classnames'
 
