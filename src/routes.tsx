@@ -20,7 +20,7 @@ export default function AppRouter() {
                         <Route path='sobre' element={<Sobre />} />
                     </Route>
                     <Route path='*' element={<NotFound />} />
-                    <Route path='prato/:id' element={<Pratos />} />
+                    <Route path='prato/:id/*' element={<Pratos />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
