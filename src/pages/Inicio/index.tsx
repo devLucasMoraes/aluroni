@@ -6,12 +6,12 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Inicio() {
     let pratosRecomendados = [...cardapio];
-    pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0,3);
+    pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3);
 
     const navigate = useNavigate();
 
     function redirecionarParaDetalhes(prato: typeof cardapio[0]) {
-        navigate(`/prato/${prato.id}`, {state: {...prato}});
+        navigate(`/prato/${prato.id}`);
     }
 
     return (
