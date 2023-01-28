@@ -3,7 +3,7 @@ import styles from './PaginaPadrao.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
 
 
-export function PaginaPadrao() {
+export default function PaginaPadrao() {
     return (
         <>
             <header className={styles.header}>
