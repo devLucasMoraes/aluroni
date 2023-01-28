@@ -2,10 +2,11 @@ import styles from './Item.module.scss';
 import classNames from 'classnames';
 import { Prato } from 'types/Types';
 import { useNavigate } from 'react-router-dom';
+import { memo } from 'react';
 
 type ItemProps = Prato
 
-export default function Item(props: ItemProps) {
+function Item(props: ItemProps) {
     const { id, title, description, size, serving, price, category, photo } = props;
     const navigate = useNavigate();
     return (
@@ -39,3 +40,5 @@ export default function Item(props: ItemProps) {
         </div>
     );
 }
+
+export default memo(Item);
