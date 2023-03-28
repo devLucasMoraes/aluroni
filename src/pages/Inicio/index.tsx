@@ -1,9 +1,9 @@
-import cardapio from 'data/cardapio.json';
+import cardapio from '../../data/cardapio.json';
 import styles from './Inicio.module.scss';
-import stylesTema from 'styles/Tema.module.scss';
-import nossaCasa from 'assets/nossa_casa.png';
+import stylesTema from '../../styles/Tema.module.scss';
+import nossaCasa from '../../assets/nossa_casa.png';
 import { useNavigate } from 'react-router-dom';
-import { Prato } from 'types/Types';
+import { Prato } from '../../types/Types';
 
 export default function Inicio() {
     let pratosRecomendados = [...cardapio];
